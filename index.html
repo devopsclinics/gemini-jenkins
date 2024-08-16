@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Colorful Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 1400% 1400%;
+            animation: GradientShift 15s ease infinite;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes GradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to a Changing Colorful Background at DevopClinics at branch DevopClinics!</h1>
+</body>
+</html>
