@@ -15,7 +15,7 @@
             background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
             background-size: 1400% 1400%;
             animation: GradientShift 15s ease infinite;
-            font-family: Arial, sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
 
         @keyframes GradientShift {
@@ -26,11 +26,27 @@
 
         h1 {
             color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            animation: TextGlow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes TextGlow {
+            0% { text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); }
+            100% { text-shadow: 3px 3px 20px rgba(255, 255, 255, 1); }
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to a Changing Colorful Background at DevopClinics at branch DevopClinics!</h1>
+    <div class="container">
+        <h1>Welcome to a Changing Colorful Background at DevopClinics!</h1>
+    </div>
 </body>
 </html>
